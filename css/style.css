@@ -68,7 +68,7 @@ legend {
 
 input {
     text-align: left;
-    transition-duration: .5;
+    transition-duration: 0.9ms;
 }
 
 ::placeholder {
