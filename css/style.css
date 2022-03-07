@@ -66,10 +66,16 @@ legend {
     color: rgb(130, 130, 130);
 }
 
-input {
+input[type=text],
+input[type=tel],
+input[type=email],
+input[type=number],
+select,textarea {
+    width: 100%;
     text-align: left;
-    transition-duration: 0.9ms;
+    transition-duration: 1000ms;
 }
+
 
 ::placeholder {
     font-style: italic;
@@ -123,6 +129,10 @@ button {
     text-align: center;
 }
 
+#zip {
+    width: 50%;
+}
+
 .container {
     background: powderblue;
 }
@@ -156,7 +166,7 @@ fieldset {
     }
 
     #zip {
-        width: 20%;
-        margin-right: 50%;
+        width: 25%;
+        margin-right: 45%;
     }
 }
