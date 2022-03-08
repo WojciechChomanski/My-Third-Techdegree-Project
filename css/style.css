@@ -1,5 +1,6 @@
 * {
     font-family: 'Merriweather', serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -72,7 +73,7 @@ input[type=email],
 input[type=number],
 select,textarea {
     width: 100%;
-    text-align: left;
+    text-align: right;
     transition-duration: 1000ms;
 }
 
@@ -82,9 +83,11 @@ select,textarea {
     padding-right: 3px;
 }
 
-input:focus{
+input:focus, 
+select:focus, 
+textarea:focus {
     background: rgb(145, 138, 138);
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 
 hr {
@@ -144,10 +147,10 @@ fieldset {
 @media screen and (min-width: 768px) {
     .main-form label {
         display: inline-block;
+        margin: 0 auto;
     }
 
     .container {
-        max-width:50%;
         margin: auto;
         padding-top: 50px;
     }
@@ -155,18 +158,18 @@ fieldset {
     .input-section{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        flex-basis: 75%;
     }
     .main-form input, .main-form select {
         width: 70%;
     }
 
     .main-form select {
-    box-sizing:content-box;
+    box-sizing: inherit;
     }
 
     #zip {
         width: 25%;
-        margin-right: 45%;
+        margin-left: 45%;
     }
 }
